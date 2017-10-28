@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="1017.0" style="-fx-background-color: #d1baca;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="support.system.OfferedListController">
+   <children>
+      <Label alignment="CENTER" layoutX="292.0" layoutY="12.0" prefHeight="39.0" prefWidth="150.0" text="Offered List">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="offeredTableView" layoutX="15.0" layoutY="81.0" prefHeight="359.0" prefWidth="969.0">
+        <columns>
+          <TableColumn fx:id="codeOFTable" prefWidth="176.0" text="Course Code" />
+          <TableColumn fx:id="initOFTable" prefWidth="84.0" text="Teacher Init" />
+            <TableColumn fx:id="startDayTable" prefWidth="162.0" text="Start Day" />
+            <TableColumn fx:id="endDayTable" prefWidth="140.0" text="End Day" />
+            <TableColumn fx:id="sectionOFTable" prefWidth="110.0" text="Section" />
+            <TableColumn fx:id="roomOFTable" prefWidth="115.0" text="Room No" />
+            <TableColumn fx:id="startTimeTable" prefWidth="85.0" text="Start Time" />
+            <TableColumn fx:id="endTimeTable" prefWidth="110.0" text="End Time" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="handleBackAction" buttonType="RAISED" layoutX="618.0" layoutY="19.0" onAction="#handleBackAction" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #5b18bf;" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="421.0" style="-fx-background-color: #b6b8c3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="support.system.MainViewController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="62.0" onAction="#handleAdmissionAction" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #005cb2;" text="Admission" textFill="#e4e4de">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="149.0" onAction="#handleCoordinatorAction" prefHeight="30.0" prefWidth="146.0" style="-fx-background-color: #005cb2;" text="Coordiantor" textFill="#ebe4e4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="237.0" onAction="#handleFacultyAction" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #005cb2;" text="Faculty" textFill="#fffefe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="329.0" onAction="#handleStudentAction" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #005cb2;" text="Student" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

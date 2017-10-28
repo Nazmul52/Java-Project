@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1248.0" style="-fx-background-color: #ffff6b;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="support.system.StudentViewController">
+   <tabs>
+      <Tab text="My Profile">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="4.0" prefHeight="28.0" prefWidth="179.0" text="University Information" textFill="#1b0606">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="68.0" prefHeight="19.0" prefWidth="103.0" text="Student Id :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="120.0" prefHeight="19.0" prefWidth="103.0" text="Student Name :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="184.0" prefHeight="19.0" prefWidth="103.0" text="Program Name :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="499.0" layoutY="4.0" prefHeight="28.0" prefWidth="179.0" text="Education Information" textFill="#1b0606">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="622.0" layoutY="130.0" prefHeight="17.0" prefWidth="82.0" text="S.Sc Subject :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="620.0" layoutY="78.0" prefHeight="17.0" prefWidth="85.0" text="H.Sc Subject :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="964.0" layoutY="130.0" prefHeight="17.0" prefWidth="57.0" text="Grade :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="963.0" layoutY="78.0" prefHeight="17.0" prefWidth="57.0" text="Grade :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="620.0" layoutY="194.0" prefHeight="17.0" prefWidth="85.0" text="S.Sc Year :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="964.0" layoutY="194.0" prefHeight="17.0" prefWidth="85.0" text="H.Sc Year :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="457.0" layoutY="10.0" orientation="VERTICAL" prefHeight="268.0" prefWidth="7.0" style="-fx-background-color: #212121;" />
+                  <Separator layoutX="11.0" layoutY="295.0" prefHeight="2.0" prefWidth="1220.0" style="-fx-background-color: #1c313a;" />
+                  <Label layoutX="512.0" layoutY="307.0" prefHeight="28.0" prefWidth="205.0" text="Personal Information" textFill="#1b0606">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="499.0" layoutY="345.0" prefHeight="2.0" prefWidth="213.0" style="-fx-background-color: #000000;" />
+                  <Label layoutX="19.0" layoutY="429.0" prefHeight="17.0" prefWidth="94.0" text="Email :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="365.0" text="Personal Number :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="501.0" text="Date of Birth :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="400.0" layoutY="376.0" prefHeight="21.0" prefWidth="77.0" text="Sex :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="400.0" layoutY="429.0" prefHeight="21.0" prefWidth="77.0" text="Religion :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="400.0" layoutY="491.0" prefHeight="21.0" prefWidth="77.0" text="Occuption :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="400.0" layoutY="543.0" prefHeight="21.0" prefWidth="92.0" text="Citizenship :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="726.0" layoutY="376.0" prefHeight="21.0" prefWidth="100.0" text="Father Name :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="726.0" layoutY="429.0" prefHeight="21.0" prefWidth="100.0" text="Mother Name :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="726.0" layoutY="491.0" prefHeight="21.0" prefWidth="100.0" text="Home District :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="726.0" layoutY="543.0" prefHeight="21.0" prefWidth="175.0" text="Family Contract Number :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="477.0" layoutY="43.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+                  <Separator layoutX="12.0" layoutY="42.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+                  <JFXButton buttonType="RAISED" layoutX="941.0" layoutY="14.0" onAction="#handleLogoutAction" prefHeight="37.0" prefWidth="93.0" ripplerFill="#1ccc1b" style="-fx-background-color: #303f9f;" text="Log Out" textFill="#ebdfdf">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="SIdLabel" layoutX="164.0" layoutY="63.0" prefHeight="30.0" prefWidth="244.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="SNameLabel" layoutX="164.0" layoutY="120.0" prefHeight="30.0" prefWidth="235.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="programLabel" layoutX="164.0" layoutY="184.0" prefHeight="30.0" prefWidth="228.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="HscSubjectLabel" layoutX="726.0" layoutY="70.0" prefHeight="33.0" prefWidth="176.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="SscSubjectLabel" layoutX="726.0" layoutY="124.0" prefHeight="33.0" prefWidth="176.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="SscYearLabel" layoutX="726.0" layoutY="188.0" prefHeight="33.0" prefWidth="176.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="SscGradeLabel" layoutX="1049.0" layoutY="71.0" prefHeight="31.0" prefWidth="138.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="HscGradeYear" layoutX="1049.0" layoutY="125.0" prefHeight="31.0" prefWidth="138.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="HscYearLabel" layoutX="1049.0" layoutY="189.0" prefHeight="31.0" prefWidth="138.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fatherLabel" layoutX="941.0" layoutY="367.0" prefHeight="36.0" prefWidth="260.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="motherLabel" layoutX="941.0" layoutY="422.0" prefHeight="36.0" prefWidth="260.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="districtLabel" layoutX="941.0" layoutY="483.0" prefHeight="36.0" prefWidth="260.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="familyNumberLabel" layoutX="941.0" layoutY="536.0" prefHeight="36.0" prefWidth="260.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sexLabel" layoutX="499.0" layoutY="371.0" prefHeight="32.0" prefWidth="129.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="religionLabel" layoutX="499.0" layoutY="424.0" prefHeight="32.0" prefWidth="129.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="occuptionLabel" layoutX="499.0" layoutY="485.0" prefHeight="32.0" prefWidth="129.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="citizenLabel" layoutX="499.0" layoutY="538.0" prefHeight="32.0" prefWidth="129.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="personalNumLabel" layoutX="151.0" layoutY="360.0" prefHeight="35.0" prefWidth="208.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emailSLabel" layoutX="151.0" layoutY="422.0" prefHeight="35.0" prefWidth="226.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="birthSField" layoutX="149.0" layoutY="494.0" prefHeight="35.0" prefWidth="230.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Self Advising">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="700.0" layoutY="495.0" onAction="#handleSaveAction" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #c8c4ce;" text="Save">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="571.0" layoutY="493.0" onAction="#handleLogoutAction" prefHeight="48.0" prefWidth="93.0" ripplerFill="#1ccc1b" style="-fx-background-color: #c8c4ce;" text="Log Out" textFill="#ebdfdf">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <TableView fx:id="courseTableView" layoutX="52.0" layoutY="94.0" prefHeight="334.0" prefWidth="1162.0">
+                    <columns>
+                      <TableColumn fx:id="idTable" prefWidth="75.0" text="Id " />
+                      <TableColumn fx:id="facultyTable" prefWidth="124.0" text="Faculty Init" />
+                        <TableColumn fx:id="courseTable" prefWidth="354.0" text="Course" />
+                        <TableColumn fx:id="startTimeTable" prefWidth="97.0" text="Start Time" />
+                        <TableColumn fx:id="endTimeTable" prefWidth="83.0" text="End Time" />
+                        <TableColumn fx:id="roomTable" prefWidth="92.0" text="Room No" />
+                        <TableColumn fx:id="sectionTable" prefWidth="99.0" text="Section" />
+                        <TableColumn fx:id="startDayTable" prefWidth="120.0" text="Start Day" />
+                        <TableColumn fx:id="enddayTable" prefWidth="117.0" text="End Day" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="View All Grade">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+      <Tab text="Course List">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="1115.0" layoutY="14.0" onAction="#handleLogoutAction" prefHeight="48.0" prefWidth="93.0" ripplerFill="#1ccc1b" style="-fx-background-color: #c8c4ce;" text="Log Out" textFill="#ebdfdf">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <ListView fx:id="courseListAllVew" layoutX="43.0" layoutY="106.0" prefHeight="378.0" prefWidth="1157.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>

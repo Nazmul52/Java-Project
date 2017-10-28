@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="729.0" style="-fx-background-color: #90db04;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="support.system.CourseListController">
+   <children>
+      <Label alignment="CENTER" layoutX="293.0" layoutY="14.0" prefHeight="34.0" prefWidth="122.0" text="Course List">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="codeTableView" layoutX="25.0" layoutY="66.0" prefHeight="405.0" prefWidth="677.0">
+        <columns>
+          <TableColumn fx:id="codetable" prefWidth="131.0" text="Course Code" />
+          <TableColumn fx:id="titleTable" prefWidth="463.0" text="Course Title" />
+            <TableColumn fx:id="creditsTable" prefWidth="81.0" text="Credits" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="567.0" layoutY="5.0" onAction="#handleBackAction" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #cc04db;" text="Back">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

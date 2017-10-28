@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="343.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="support.system.FXMLDocumentController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-2.0" style="-fx-background-color: #76ffff;" textFill="#0b37d4">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label alignment="CENTER" layoutX="135.0" layoutY="14.0" prefHeight="17.0" prefWidth="136.0" text="Login System" textFill="#3a0acf">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="userNameField" alignment="CENTER" focusColor="#191c25" labelFloat="true" layoutX="108.0" layoutY="85.0" prefHeight="43.0" prefWidth="215.0" promptText="User Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="108.0" layoutY="291.0" onAction="#handleLoginAction" prefHeight="35.0" prefWidth="96.0" ripplerFill="#e10707" style="-fx-background-color: #82b3c9;" text="Login" textFill="#0224e3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="223.0" layoutY="291.0" onAction="#handleBackAction" prefHeight="35.0" prefWidth="96.0" ripplerFill="#e10707" style="-fx-background-color: #82b3c9;" text="Back" textFill="#0224e3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="passwordField" alignment="CENTER" labelFloat="true" layoutX="108.0" layoutY="191.0" prefHeight="43.0" prefWidth="215.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

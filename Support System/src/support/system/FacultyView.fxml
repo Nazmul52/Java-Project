@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="600.0" style="-fx-background-color: #d14dbd;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="support.system.FacultyViewController">
+   <tabs>
+      <Tab text="Profile">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="651.0" style="-fx-background-color: #d14dbd;">
+               <children>
+                  <Label layoutX="29.0" layoutY="16.0" prefHeight="34.0" prefWidth="136.0" text="Teacher Name :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="87.0" prefHeight="34.0" prefWidth="136.0" text="Teacher Init :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="164.0" prefHeight="34.0" prefWidth="136.0" text="Phone Number :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="233.0" prefHeight="34.0" prefWidth="136.0" text="E-mail :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="303.0" prefHeight="34.0" prefWidth="136.0" text="Occuption :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="363.0" prefHeight="34.0" prefWidth="136.0" text="Sex :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="427.0" prefHeight="34.0" prefWidth="136.0" text="Citizenship :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameLabel" layoutX="206.0" layoutY="9.0" prefHeight="33.0" prefWidth="297.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="InitLabel" layoutX="206.0" layoutY="88.0" prefHeight="33.0" prefWidth="297.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberLabel" layoutX="206.0" layoutY="165.0" prefHeight="33.0" prefWidth="297.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emailLabel" layoutX="206.0" layoutY="234.0" prefHeight="33.0" prefWidth="297.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="occuptionLabel" layoutX="206.0" layoutY="304.0" prefHeight="33.0" prefWidth="297.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sexLabel" layoutX="206.0" layoutY="364.0" prefHeight="33.0" prefWidth="297.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="citizenshipLabel" layoutX="206.0" layoutY="428.0" prefHeight="33.0" prefWidth="297.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="113.0" layoutY="509.0" onAction="#handleLogoutAction" prefHeight="25.0" prefWidth="91.0" ripplerFill="BLACK" style="-fx-background-color: #d3e509;" text="Logo Out" textFill="#ba1c90">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Others">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <JFXComboBox fx:id="courseLustCombobox" labelFloat="true" layoutX="130.0" layoutY="61.0" onAction="#handleOnAction" onMouseClicked="#handleMouseClickedAction" prefHeight="40.0" prefWidth="322.0" promptText="Course List" />
+                  <JFXListView fx:id="regiListView" layoutX="21.0" layoutY="125.0" prefHeight="400.0" prefWidth="219.0" />
+                  <TableView fx:id="studentTableView" layoutX="252.0" layoutY="125.0" prefHeight="360.0" prefWidth="345.0">
+                    <columns>
+                      <TableColumn fx:id="idView" prefWidth="131.0" text="Student Id" />
+                      <TableColumn fx:id="nameView" prefWidth="213.0" text="Student Name" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>

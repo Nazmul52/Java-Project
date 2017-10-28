@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="677.0" style="-fx-background-color: #53c9f4;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="support.system.CoordinatorViewController">
+   <tabs>
+      <Tab text="Profile">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="572.0">
+               <children>
+                  <Label layoutX="28.0" layoutY="33.0" prefHeight="25.0" prefWidth="119.0" text="Teacher Name  :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="104.0" prefHeight="17.0" prefWidth="92.0" text="Teacher Init :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="179.0" prefHeight="21.0" prefWidth="118.0" text="Phone Number :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="249.0" prefHeight="17.0" prefWidth="117.0" text="E-mail :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="328.0" prefHeight="17.0" prefWidth="109.0" text="Qualification :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="395.0" prefHeight="17.0" prefWidth="55.0" text="Sex :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="462.0" text="Citizenship :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="NameTLabel" layoutX="220.0" layoutY="24.0" prefHeight="37.0" prefWidth="328.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="InitTLabel" layoutX="222.0" layoutY="95.0" prefHeight="39.0" prefWidth="342.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sexTLabel" layoutX="231.0" layoutY="386.0" prefHeight="39.0" prefWidth="333.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="qualiTLabel" layoutX="227.0" layoutY="319.0" prefHeight="39.0" prefWidth="328.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="citizenshipTLabel" layoutX="235.0" layoutY="453.0" prefHeight="39.0" prefWidth="320.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="NumberTField" layoutX="222.0" layoutY="170.0" prefHeight="39.0" prefWidth="342.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emailTField" layoutX="220.0" layoutY="240.0" prefHeight="39.0" prefWidth="342.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="occuptionTLabel" layoutX="235.0" layoutY="523.0" prefHeight="39.0" prefWidth="329.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="34.0" layoutY="532.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="34.0" layoutY="532.0" text="Occuption :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Student Offered">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+      <Tab text="Teacher Offered">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <JFXComboBox fx:id="codeCombo" focusColor="#3d6bf5" labelFloat="true" layoutX="247.0" layoutY="38.0" prefHeight="38.0" prefWidth="332.0" promptText="Course Code" style="-fx-background-color: #ece6ed;" />
+                  <JFXComboBox fx:id="teacherCombo" labelFloat="true" layoutX="247.0" layoutY="122.0" prefHeight="38.0" prefWidth="335.0" promptText="Teacher Init" style="-fx-background-color: #ece6ed;" />
+                  <JFXComboBox fx:id="roomCombo" labelFloat="true" layoutX="247.0" layoutY="204.0" prefHeight="38.0" prefWidth="335.0" promptText="Room No" style="-fx-background-color: #ece6ed;" />
+                  <JFXComboBox fx:id="TimeCombo" labelFloat="true" layoutX="247.0" layoutY="290.0" prefHeight="38.0" prefWidth="336.0" promptText="Time" style="-fx-background-color: #ece6ed;" />
+                  <JFXComboBox fx:id="DayCombo" labelFloat="true" layoutX="247.0" layoutY="373.0" prefHeight="38.0" prefWidth="338.0" promptText="Start Day " style="-fx-background-color: #ece6ed;" />
+                  <JFXButton buttonType="RAISED" layoutX="452.0" layoutY="566.0" onAction="#handleTeacherOfferedAction" prefHeight="25.0" prefWidth="87.0" ripplerFill="#0d0d0d" text="Save" textFill="#1323b0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="555.0" layoutY="566.0" onAction="#handleLogoutAction" prefHeight="25.0" prefWidth="87.0" ripplerFill="BLACK" text="Log Out" textFill="#1323b0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXComboBox fx:id="sectionCombo" labelFloat="true" layoutX="247.0" layoutY="452.0" prefHeight="38.0" prefWidth="343.0" promptText="Section No" style="-fx-background-color: #ece6ed;" />
+                  <JFXButton buttonType="RAISED" layoutX="320.0" layoutY="566.0" onAction="#handleOfferedListAction" prefHeight="31.0" prefWidth="109.0" ripplerFill="#0d0d0d" text="Offered List" textFill="#1323b0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Courses Added">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <JFXTextField fx:id="codeField" alignment="CENTER" labelFloat="true" layoutX="269.0" layoutY="83.0" prefHeight="41.0" prefWidth="322.0" promptText="Course Code" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="titleField" alignment="CENTER" labelFloat="true" layoutX="267.0" layoutY="227.0" prefHeight="41.0" prefWidth="326.0" promptText="Course Title" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="creditsField" alignment="CENTER" labelFloat="true" layoutX="266.0" layoutY="369.0" prefHeight="41.0" prefWidth="328.0" promptText="Course Credits" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton buttonType="RAISED" layoutX="469.0" layoutY="569.0" onAction="#handleCourseSaveAction" prefHeight="25.0" prefWidth="79.0" ripplerFill="BLACK" text="Save" textFill="#0928ad">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="572.0" layoutY="569.0" onAction="#handleLogoutAction" prefHeight="25.0" prefWidth="79.0" ripplerFill="BLACK" text="Log Out" textFill="#0928ad">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="328.0" layoutY="569.0" onAction="#handleCourseListAction" prefHeight="31.0" prefWidth="121.0" ripplerFill="BLACK" text="Course List" textFill="#0928ad">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="29.0" layoutY="81.0" prefHeight="40.0" prefWidth="139.0" text="Course Code :">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="228.0" prefHeight="40.0" prefWidth="139.0" text="Course Title :">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="370.0" prefHeight="40.0" prefWidth="139.0" text="Course Credits :">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Teacher Added">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="39.0" prefHeight="22.0" prefWidth="144.0" text="Teacher Name :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="101.0" prefHeight="17.0" prefWidth="110.0" text="Teacher Init :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="169.0" prefHeight="21.0" prefWidth="111.0" text="Phone Number :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="247.0" prefHeight="21.0" prefWidth="79.0" text="E-mail :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="321.0" prefHeight="21.0" prefWidth="98.0" text="Qualification :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="383.0" prefHeight="21.0" prefWidth="54.0" text="Sex :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="453.0" prefHeight="21.0" prefWidth="93.0" text="Occuption :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="489.0" layoutY="578.0" onAction="#handleTeacherSaveAction" prefHeight="30.0" prefWidth="80.0" text="Save" textFill="#1c06c4">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="583.0" layoutY="578.0" onAction="#handleLogoutAction" prefHeight="30.0" prefWidth="80.0" ripplerFill="#1c1e1e" text="Log Out" textFill="#1c06c4">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="teachNameField" alignment="CENTER" labelFloat="true" layoutX="171.0" layoutY="28.0" prefHeight="39.0" prefWidth="267.0" promptText="Teacher Name" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="teachInitField" alignment="CENTER" labelFloat="true" layoutX="171.0" layoutY="94.0" prefHeight="34.0" prefWidth="267.0" promptText="Teacher Init" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="teachNumField" alignment="CENTER" labelFloat="true" layoutX="171.0" layoutY="161.0" prefHeight="36.0" prefWidth="267.0" promptText="Phone Number" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="teachEmailField" alignment="CENTER" labelFloat="true" layoutX="171.0" layoutY="237.0" prefHeight="38.0" prefWidth="267.0" promptText="E-mail" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="teachQualiField" alignment="CENTER" labelFloat="true" layoutX="171.0" layoutY="311.0" prefHeight="38.0" prefWidth="267.0" promptText="Qualification" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="teachSexField" alignment="CENTER" labelFloat="true" layoutX="171.0" layoutY="376.0" prefHeight="35.0" prefWidth="267.0" promptText="Sex" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="teachOccuptionField" alignment="CENTER" labelFloat="true" layoutX="171.0" layoutY="444.0" prefHeight="36.0" prefWidth="267.0" promptText="Occuption" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="teachCitizenshipField" alignment="CENTER" labelFloat="true" layoutX="171.0" layoutY="513.0" prefHeight="36.0" prefWidth="267.0" promptText="Citizenship" style="-fx-background-color: #ece6ed;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </JFXTextField>
+                  <Label layoutX="18.0" layoutY="521.0" prefHeight="21.0" prefWidth="93.0" text="Citizenship :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="349.0" layoutY="578.0" onAction="#handleTeacherListAction" prefHeight="31.0" prefWidth="130.0" text="Teacher List" textFill="#1d07e1">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>
