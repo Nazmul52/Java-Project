@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="288.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="university.system.AdmissionLoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="22.0" prefHeight="27.0" prefWidth="309.0" text="Admission Login System" />
+      <JFXPasswordField fx:id="AdmitPassField" alignment="CENTER" labelFloat="true" layoutX="170.0" layoutY="153.0" prefHeight="34.0" prefWidth="152.0" promptText="Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="20.0" layoutY="161.0" prefHeight="34.0" prefWidth="88.0" text="Password" />
+      <JFXButton layoutX="189.0" layoutY="241.0" onAction="#handleLoginAction" text="Login" />
+      <JFXButton layoutX="114.0" layoutY="241.0" onAction="#handlebackAction" text="Back" />
+      <JFXTextField fx:id="admissionUserField" alignment="CENTER" labelFloat="true" layoutX="170.0" layoutY="87.0" prefHeight="25.0" prefWidth="152.0" promptText="User Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="13.0" layoutY="89.0" prefHeight="25.0" prefWidth="88.0" text="User Name" />
+   </children>
+</AnchorPane>

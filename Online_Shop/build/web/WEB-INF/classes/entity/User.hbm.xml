@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 21, 2017 12:30:09 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.User" table="user" catalog="online_shop" optimistic-lock="version">
+        <id name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="userRoll" class="entity.UserRoll" fetch="select">
+            <column name="roll_id" not-null="true" />
+        </many-to-one>
+        <property name="userName" type="string">
+            <column name="user_name" length="45" not-null="true" />
+        </property>
+        <property name="userPass" type="string">
+            <column name="user_pass" length="45" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" not-null="true" />
+        </property>
+        <property name="regiDate" type="date">
+            <column name="regi_date" length="10" not-null="true" />
+        </property>
+        <property name="contract" type="string">
+            <column name="contract" length="11" not-null="true" />
+        </property>
+        <set name="productOrders" table="product_order" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="user_id" not-null="true" />
+            </key>
+            <one-to-many class="entity.ProductOrder" />
+        </set>
+    </class>
+</hibernate-mapping>

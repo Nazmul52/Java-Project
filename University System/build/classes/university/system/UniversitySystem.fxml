@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="263.0" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="university.system.UniversitySystemController">
+   <children>
+      <Label alignment="CENTER" layoutX="9.0" layoutY="14.0" prefHeight="17.0" prefWidth="302.0" text="University System ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="14.0" layoutY="59.0" onAction="#handleAdmissionAction" text="Admission" />
+      <JFXButton layoutX="14.0" layoutY="107.0" onAction="#handleCoordiantorAction" text="Coordiantor" />
+      <JFXButton layoutX="14.0" layoutY="151.0" onAction="#handleFacultyAction" text="Faculty" />
+      <JFXButton layoutX="15.0" layoutY="197.0" onAction="#handleStudentAction" text="Student" />
+   </children>
+</AnchorPane>

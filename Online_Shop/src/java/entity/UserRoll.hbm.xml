@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 21, 2017 12:30:09 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.UserRoll" table="user_roll" catalog="online_shop" optimistic-lock="version">
+        <id name="rollId" type="java.lang.Integer">
+            <column name="roll_id" />
+            <generator class="identity" />
+        </id>
+        <property name="rollName" type="string">
+            <column name="roll_name" length="45" not-null="true" />
+        </property>
+        <set name="users" table="user" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="roll_id" not-null="true" />
+            </key>
+            <one-to-many class="entity.User" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Hibernate Project</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:messages id="msg" closable="true" showDetail="true"></p:messages>
+            <p:panelGrid columns="2"> 
+                <h:outputLabel value="Category Name"></h:outputLabel>
+                <p:selectOneMenu value="Select Category Name">
+                    <f:selectItems value="#{subCategoryMB.categoryName}">
+                    </f:selectItems>
+                    
+                </p:selectOneMenu> 
+                
+                <h:outputLabel value="SubCategory Name"></h:outputLabel>
+                <h:inputText value="#{subCategoryMB.subcat.subCatName}"></h:inputText>
+                
+                <h:outputLabel value="SubCategory Description"></h:outputLabel>
+                <h:inputText value="#{subCategoryMB.subcat.subCatDesc}"></h:inputText>
+                
+                <p:commandButton action="#{subCategoryMB.addSubCategory()}" value="save" update="msg"></p:commandButton>    
+            </p:panelGrid>
+            
+        </h:form>
+    </h:body>
+</html>
+
